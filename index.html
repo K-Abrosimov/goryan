@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -56,7 +57,7 @@
                         <h2 class="division_title">חטיבת אופטיקה
                         </h2>
 
-                       
+
 
                         <div class="division_subtitile_text">חטיבת האופטיקה של גוריאן תקשורת מתמחה בהנחה וחיבור של כבלי
                             תקשורת, לרבות סיבים אופטיים מכל הסוגים. החברה בעלת ניסיון רב שנים בתחום, ומבצעת פרויקטים
@@ -73,7 +74,7 @@
                         <h2 class="division_title">חטיבת מתח נמוך
                         </h2>
 
-                        
+
 
                         <div class="division_subtitile_text">חטיבת המתח הנמוך של גוריאן תקשורת מתמחה בייעוץ, תכנון והקמה
                             של מערכות מיגון, התראה ובקרה, מערכות תקשורת ומולטימדיה, חשמל חכם, בקרות כניסה, אינטרקום
@@ -132,9 +133,20 @@
                 </div>
 
                 <div class="optical_image_box">
-                    <img src="./assets/service_img1.jpg" alt="optical_img1" class="optical_img">
+
+                    <a data-fancybox href="./assets/service_img1.jpg" data-caption="Hello world">
+                        <img src="./assets/service_img1.jpg" alt="optical_img1" class="optical_img">
+                    </a>
+                    <a data-fancybox href="./assets/service_img2.jpg" data-caption="Hello world">
+                        <img src="./assets/service_img2.jpg" alt="optical_img2" class="optical_img">
+                    </a>
+                    <a data-fancybox href="./assets/service_img3.jpg" data-caption="Hello world">
+                        <img src="./assets/service_img3.jpg" alt="optical_img3" class="optical_img">
+                    </a>
+
+                    <!--                     <img src="./assets/service_img1.jpg" alt="optical_img1" class="optical_img">
                     <img src="./assets/service_img2.jpg" alt="optical_img2" class="optical_img">
-                    <img src="./assets/service_img3.jpg" alt="optical_img3" class="optical_img">
+                    <img src="./assets/service_img3.jpg" alt="optical_img3" class="optical_img"> -->
                 </div>
             </div>
         </div>
@@ -189,9 +201,19 @@
                 </div>
 
                 <div class="voltage_image_box">
-                    <img src="./assets/service_img1.jpg" alt="voltage_img1" class="voltage_img">
+                    <a data-fancybox href="./assets/service_img4.jpg" data-caption="Hello world">
+                        <img src="./assets/service_img4.jpg" alt="voltage_img1" class="voltage_img">
+                    </a>
+                    <a data-fancybox href="./assets/service_img5.jpg" data-caption="Hello world">
+                        <img src="./assets/service_img5.jpg" alt="voltage_img2" class="voltage_img">
+                    </a>
+                    <a data-fancybox href="./assets/service_img6.jpg" data-caption="Hello world">
+                        <img src="./assets/service_img6.jpg" alt="voltage_img3" class="voltage_img">
+                    </a>
+
+                    <!--            <img src="./assets/service_img1.jpg" alt="voltage_img1" class="voltage_img">
                     <img src="./assets/service_img2.jpg" alt="voltage_img2" class="voltage_img">
-                    <img src="./assets/service_img3.jpg" alt="voltage_img3" class="voltage_img">
+                    <img src="./assets/service_img3.jpg" alt="voltage_img3" class="voltage_img"> -->
                 </div>
             </div>
         </div>
@@ -243,8 +265,12 @@
         </div>
     </footer>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox]', {
+            //
+        });    
+    </script>
 </body>
 
 </html>
